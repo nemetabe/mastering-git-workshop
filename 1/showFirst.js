@@ -3,11 +3,12 @@
 const getBeers = require('../data')
 
 function getFirstBeer() {
-    // TODO: return the first beer object (use `getBeers` for the solution)
+  return getBeers()[0]
 }
 
 if (getFirstBeer()?.name === "Rivet red") {
     console.log("Success ✅");
 } else {
+    console.log(getBeers()[0].name);
     console.log("Not quite right");
 }
